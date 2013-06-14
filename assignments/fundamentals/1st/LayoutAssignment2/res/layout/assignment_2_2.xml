@@ -3,7 +3,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity" 
+    android:background="#DDDDDD">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#EEEEEE" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="ドロイド君の画像ファイル"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/title"
+            android:layout_below="@+id/title"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="res/ic_launcher.png"
+            android:textColor="#AAAAAA"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/title"
+            android:background="#ffffff"
+            android:src="@drawable/ic_launcher" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#EEEEEE"
+        android:padding="5dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="xhdpi"
+            android:textColor="#AAAAAA"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="12,516 bytes"
+            android:textColor="#666666"
+            android:textSize="10sp" />
+    </RelativeLayout>
 
 </LinearLayout>

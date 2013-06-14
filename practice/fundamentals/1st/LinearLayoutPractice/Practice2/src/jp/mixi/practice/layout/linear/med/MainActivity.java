@@ -1,6 +1,7 @@
 
 package jp.mixi.practice.layout.linear.med;
 
+import jp.mixi.practice.layout.linear.med.R.string;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
